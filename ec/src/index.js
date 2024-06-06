@@ -7,7 +7,7 @@ import Main from './main';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter> 
-    <Main/>
+    <Main />
   </BrowserRouter>
 );
 

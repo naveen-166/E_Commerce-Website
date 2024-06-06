@@ -6,15 +6,14 @@ import img from './images/img1.jpg';
 const BackgroundImageWithText = () => {
     useEffect(() => {
         AOS.init({
-            duration: 500, // Change the animation duration as needed
-            // easing: 'ease-in-out', // Change the animation easing as needed
+            duration: 500,
         });
     }, []);
 
     return (
         <div>
             <div
-                className="relative bg-cover bg-center h-64 md:h-80 lg:h-96 xl:h-128"
+                className="relative bg-cover bg-center h-64 md:h-80 lg:h-96 xl:h-128 rounded-b-lg"
                 style={{ backgroundImage: `url(${img})` }}
                 data-aos="fade-left" // Add AOS animation attribute here
             >

@@ -12,7 +12,7 @@ import React from "react";
 const Detail = [
   {
     id: 1,
-    Title: "Shirt",
+    Title: "Chudi",
     price: 500,
     img: img1
   },
@@ -62,32 +62,35 @@ const Detail = [
 
 function Products() {
 
-    return (
-        <div>
-            <div className=" h-6 rounded-xl bg-zinc-400 mr-4 ml-4">
+  return (
+    <div>
+      <div className=" h-6 rounded-xl bg-zinc-400 mr-4 ml-4">
+      </div>
+      <div className='ml-5 mt-4 text-lg font-semibold flex flex-row'>New Arrivals !!
+        <span className='ml-3 mt-1 text-sm'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+        </span>
+      </div>
+      <div className="flex flex-wrap justify-center space-x-3">
+        {Detail.map((product, index) => (
+          <button>
+            <div key={product.id} className="max-w-sm rounded space-x-3 overflow-hidden shadow-lg m-4 hover:scale-105">
+              <img className=" h-96" src={product.img} alt={product.Title} />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">{product.Title}</div>
+                <div className="font-medium text-l mb-2">Price : {product.price}</div>
+              </div>
+
             </div>
-            <div className='ml-5 mt-4 text-lg font-semibold flex flex-row'>New Arrivals !!
-                <span className='ml-3 mt-1 text-sm'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-                </span>
-            </div>
-            <div className="flex flex-wrap justify-center">
-                {Detail.map((product, index) => (
-                    <div key={product.id} className="max-w-sm rounded overflow-hidden shadow-lg m-4">
-                        <img src={product.img} alt={product.Title} />
-                        <div className="px-6 py-4">
-                            <div className="font-bold text-xl mb-2">{product.Title}</div>
-                            <div className=" font-medium text-l mb-2">Price : {product.price}</div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            <div className=" text-center pt-4 pb-7 text-xl font-semibold text-gray-600">End of Page...</div>
+          </button>
+        ))}
+      </div>
+      <div className=" text-center pt-4 pb-7 text-xl font-semibold text-gray-600">End of Page...</div>
 
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default Products
