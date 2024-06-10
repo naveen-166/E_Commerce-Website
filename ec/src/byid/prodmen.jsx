@@ -4,17 +4,18 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from '../components/navbar/navbar'
 import Detailmen from "./Detailsmen";
-
+import { useAuth } from "../AuthContext/AuthContext";
 const Product = () => {
+  const {isLoggedIn, setIsLoggedIn, username, setUsername, logout } = useAuth();
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleClick = (product) => {
     setSelectedProduct(product);
   };
-
+  console.log(isLoggedIn);
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <div className='ml-5 mt-4 text-lg font-semibold flex flex-row'>Exclusive of Men
         <span className='ml-3 mt-1 text-sm'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />

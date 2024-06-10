@@ -86,10 +86,10 @@ const DetailsPage = () => {
                             <div className="ml-6 mt-2">Size : {size}</div>
                             <p className="ml-6 mt-2">Pincode </p>
                             <div className="flex justify-center">
-                                <input type="number" placeholder="Enter your pincode.." className=" text-center mt-2 w-[80%]"></input></div>
+                                <input type="text" placeholder="Enter your pincode.." className=" rounded-md text-center mt-2 w-[80%]"></input></div>
                             <div className="flex justify-center">
-                                <button className="mt-3 flex flex-row w-auto h-auto rounded-lg border border-slate-950 hover:bg-black hover:text-white  ">Check
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className=" mt-0.5 ml-2 size-5 animate-spin">
+                                <button className=" justify-self-center mt-3 flex flex-row w-20 h-auto rounded-lg border border-slate-950 hover:bg-black hover:text-white  ">Check
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className=" mt-0.5 ml-2 size-5">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
                                     </svg>
                                 </button>

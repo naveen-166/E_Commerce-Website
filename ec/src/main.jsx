@@ -6,9 +6,12 @@ import Newarival from './byid/newarival'
 import Login from './components/login/Login'
 import {Routes, Route } from "react-router-dom";
 import DetailsPage from './byid/redict'
+import { AuthProvider } from './AuthContext/AuthContext';
+
 function Main() {
   return (
     <div>
+              <AuthProvider>
         <Routes>
             <Route path="/" element={<App />}/>
             <Route path="/men" element={<Product />}/>
@@ -16,8 +19,9 @@ function Main() {
             <Route path="/newarival" element={<Newarival />}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/details/:id" element={<DetailsPage/>} />
-
         </Routes>
+        </AuthProvider>
+
     </div>
   )
 }

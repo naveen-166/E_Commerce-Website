@@ -6,7 +6,7 @@ import img5 from "../../byid/imagesmen/im5.jpg"
 import img6 from "../../byid/imagesfem/im6.jpg"
 import img7 from "../../byid/imagesmen/im7.jpg"
 import img8 from "../../byid/imagesfem/im8.jpg"
-import React from "react";
+import React, { useState } from "react";
 
 
 const Detail = [
@@ -61,6 +61,8 @@ const Detail = [
 ];
 
 function Products() {
+  const [selectedProduct,setSelectedProduct]=useState();
+  
 
   return (
     <div>

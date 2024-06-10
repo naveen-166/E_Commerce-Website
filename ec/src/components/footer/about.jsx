@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <div className=" h-6 rounded-xl bg-zinc-400 mr-4 ml-4 mt-1"></div>
-        <div className=' mt-2 rounded-2xl w-full h-48 bg-gray-700'>
+        <div className=' mt-2 rounded-b-lg w-full h-48 bg-gray-700'>
         <div >
             <div className=' flex justify-center text-3xl font-bold text-white'> About us.</div>
             <ul className='m-7 mb-4 text-gray-200'>
