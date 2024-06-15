@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar/navbar'
 
 const Productfem = () => {
-    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [selectedProduct, setSelectedProduct] = useState(null
+      
+    );
 
     const handleClick = (product) => {
       setSelectedProduct(product);

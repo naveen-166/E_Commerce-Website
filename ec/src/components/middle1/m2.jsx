@@ -1,11 +1,11 @@
-import img1 from "../../byid/imagesfem/im1.jpg"
-import img2 from "../../byid/imagesfem/im2.jpg"
-import img3 from "../../byid/imagesmen/im3.jpg"
-import img4 from "../../byid/imagesfem/im4.jpg"
-import img5 from "../../byid/imagesmen/im5.jpg"
-import img6 from "../../byid/imagesfem/im6.jpg"
-import img7 from "../../byid/imagesmen/im7.jpg"
-import img8 from "../../byid/imagesfem/im8.jpg"
+import img1 from "../../subpages/imagesfem/im1.jpg"
+import img2 from "../../subpages/imagesfem/im2.jpg"
+import img3 from "../../subpages/imagesmen/im3.jpg"
+import img4 from "../../subpages/imagesfem/im4.jpg"
+import img5 from "../../subpages/imagesmen/im5.jpg"
+import img6 from "../../subpages/imagesfem/im6.jpg"
+import img7 from "../../subpages/imagesmen/im7.jpg"
+import img8 from "../../subpages/imagesfem/im8.jpg"
 import React, { useState } from "react";
 
 

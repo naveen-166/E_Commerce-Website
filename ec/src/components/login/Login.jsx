@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth } from '../../AuthContext/AuthContext';
+import { useAuth } from '../../Context/AuthContext';
 import Navbar from "../navbar/navbar";
 import img from "./images/im1.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Login() {
+    const sampleUsername = 'admin';
+    const samplePassword = 'admin';
     const { isLoggedIn, setIsLoggedIn, setUsername } = useAuth();
     const [error, setError] = useState('');
 
@@ -18,12 +20,11 @@ function Login() {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        const sampleUsername = 'admin';
-        const samplePassword = 'admin';
+       
 
         const usernameInput = document.getElementById('user').value;
         const passwordInput = document.getElementById('pwd').value;
-
+        console.log(usernameInput);
         if (usernameInput === sampleUsername && passwordInput === samplePassword) {
             setIsLoggedIn(true);
             setUsername(sampleUsername);
@@ -45,11 +46,11 @@ function Login() {
                         </div>
                         {isLoggedIn ? (
                             <>
-                                <h1 className="flex justify-center ml-2 mt-2 text-2xl font-serif"> Hi, admin</h1>
+                                <h1 className="flex justify-center ml-2 mt-2 text-2xl font-serif"> Hi, {sampleUsername}</h1>
                                 <div className="flex justify-center">
                                     <div className="w-[24%] h-1 ml-2 bg-black "></div>
                                 </div>
-                                <div className='flex justify-center mt-6 mb-6' ><span className=' text-xl'>Name :</span> <span className=' text-xl'>admin</span></div>
+                                <div className='flex justify-center mt-6 mb-6' ><span className=' text-xl'>Name :</span> <span className=' text-xl'>{sampleUsername}</span></div>
                             </>
                         ) : (
                             <>

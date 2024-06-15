@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from '../components/navbar/navbar'
 import Detailmen from "./Detailsmen";
-import { useAuth } from "../AuthContext/AuthContext";
+import { useAuth } from "../Context/AuthContext";
 const Product = () => {
   const {isLoggedIn, setIsLoggedIn, username, setUsername, logout } = useAuth();
   const [selectedProduct, setSelectedProduct] = useState(null);
